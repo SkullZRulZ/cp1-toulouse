@@ -80,3 +80,43 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.box>a {
+  color: #3f75da50;
+}
+
+@media (min-width: 700px) {
+  .menu {
+    margin-left: auto;
+  }
+
+  .desktop {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .contents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .desktop>img:last-child {
+    display: none;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+}
